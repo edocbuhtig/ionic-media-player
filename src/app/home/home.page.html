@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Streaming Media Demo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="ion-padding">
+    <ion-button (click)="playStreaming('https://sunilk.work/xxx.mp4')">Remote MP4</ion-button>
+    <ion-button (click)="playStreaming('assets/videos/xxx.mp4')">Local File </ion-button>
+    <ion-button (click)="playStreaming('https://sunilk.work/xxx.mov')">Remote MOV</ion-button>
+  </div>
+</ion-content>
